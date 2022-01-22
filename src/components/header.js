@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+// import { StaticImage } from "gatsby-plugin-image"
+import { Disclosure, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon, ShoppingCartIcon, LoginIcon } from '@heroicons/react/outline'
 import HeaderLogo from "../images/header-logo.svg"
 
