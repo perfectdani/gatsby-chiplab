@@ -1,52 +1,57 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "chiplab",
+  "version": "1.0.0",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "@headlessui/react": "^1.4.3",
-    "@heroicons/react": "^1.0.5",
-    "gatsby": "^4.5.3",
-    "gatsby-plugin-gatsby-cloud": "^4.5.2",
-    "gatsby-plugin-image": "^2.5.2",
-    "gatsby-plugin-manifest": "^4.5.2",
-    "gatsby-plugin-offline": "^5.5.2",
-    "gatsby-plugin-react-helmet": "^5.5.0",
-    "gatsby-plugin-react-svg": "^3.1.0",
-    "gatsby-plugin-sharp": "^4.5.2",
-    "gatsby-source-filesystem": "^4.5.2",
-    "gatsby-transformer-sharp": "^4.5.0",
-    "prop-types": "^15.8.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "gatsby-plugin-postcss": "^5.5.0",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.15"
-  },
+  "description": "chiplab",
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lint:fix": "eslint src --fix && yarn format",
+    "format": "prettier -w ."
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "@headlessui/react": "^1.4.3",
+    "@heroicons/react": "^1.0.5",
+    "gatsby": "^4.5.4",
+    "gatsby-plugin-image": "^2.5.2",
+    "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby-plugin-sharp": "^4.5.2",
+    "gatsby-plugin-sitemap": "^5.5.0",
+    "gatsby-source-filesystem": "^4.5.2",
+    "gatsby-transformer-sharp": "^4.5.0",
+    "postscribe": "^2.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-markdown": "^8.0.0",
+    "swiper": "^7.4.1"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "@fontsource/nunito-sans": "^4.5.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "autoprefixer": "^10.4.2",
+    "clsx": "^1.1.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "gatsby-plugin-postcss": "^5.5.0",
+    "gatsby-plugin-root-import": "^2.0.8",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-sort-class-names": "^3.0.1",
+    "tailwind-merge": "^1.2.0",
+    "tailwindcss": "^3.0.15"
   }
 }
