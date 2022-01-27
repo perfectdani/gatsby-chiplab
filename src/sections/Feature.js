@@ -37,7 +37,7 @@ export default function Feature() {
     <div className='bg-white'>
       <div className='max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8'>
         <div className='bg-gray-50 px-6 py-16 rounded-2xl sm:p-16'>
-          <div className='max-w-xl mx-auto lg:max-w-none'>
+          <div className='max-w-7xl mx-auto lg:max-w-none'>
             <div className='text-center'>
               <h2 className='font-extrabold text-2xl text-gray-900 tracking-tight'>
                 We built our business on customer service
@@ -49,12 +49,8 @@ export default function Feature() {
               pagination={{ clickable: true }}
               loop={true}
               breakpoints={{
-                400: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
                 600: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 20,
                 },
                 860: {

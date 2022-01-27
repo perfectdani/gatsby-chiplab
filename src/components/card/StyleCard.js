@@ -9,10 +9,7 @@ const StyleCard = ({ category }) => {
       href={category.href}
       className={clsxm('block group', category.isDisabled && 'opacity-50')}
     >
-      <div
-        aria-hidden='true'
-        className='aspect-h-3 aspect-w-5 rounded-lg lg:aspect-h-3 lg:aspect-w-5 group-hover:opacity-75'
-      >
+      <div aria-hidden='true' className='rounded-lg group-hover:opacity-75'>
         <img
           src={category.imageSrc}
           alt={category.imageAlt}

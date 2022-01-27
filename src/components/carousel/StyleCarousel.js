@@ -14,8 +14,7 @@ const StyleCarousel = ({ category }) => {
         pagination={{ clickable: true }}
         grabCursor={true}
         breakpoints={{
-          320: { slidesPerView: 1 },
-          636: { slidesPerView: 3 },
+          320: { slidesPerView: 2 },
           768: { slidesPerView: 4 },
         }}
       >

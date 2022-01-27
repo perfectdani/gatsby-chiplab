@@ -8,10 +8,7 @@ const MaterialCard = ({ category }) => {
       href={category.href}
       className={clsxm('block group', category.isDisabled && 'opacity-50')}
     >
-      <div
-        aria-hidden='true'
-        className='aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-3 lg:aspect-w-5 group-hover:opacity-75'
-      >
+      <div aria-hidden='true' className='rounded-lg group-hover:opacity-75'>
         <img
           src={category.imageSrc}
           alt={category.imageAlt}
