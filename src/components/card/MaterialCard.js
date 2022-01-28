@@ -6,7 +6,7 @@ const MaterialCard = ({ category }) => {
     <a
       key={category.name}
       href={category.href}
-      className={clsxm('block group', category.isDisabled && 'opacity-50')}
+      className={clsxm('block group shadow-lg rounded-lg', category.isDisabled && 'opacity-50')}
     >
       <div aria-hidden='true' className='rounded-lg group-hover:opacity-75'>
         <img
@@ -18,10 +18,10 @@ const MaterialCard = ({ category }) => {
       <h3 className='font-semibold mt-4 text-center text-gray-900 text-xl'>
         {category.name}
       </h3>
-      <ReactMarkdown className='mt-2 mx-auto px-0 text-base text-center text-gray-500 w-auto md:w-80'>
+      <ReactMarkdown className='mt-2 mx-auto px-0 text-base text-center text-gray-500 w-auto lg:w-80'>
         {category.description}
       </ReactMarkdown>
-      <div className='mt-6 text-center'>
+      <div className='py-6 text-center'>
         <a className='border border-green-500 mx-auto px-6 py-2 rounded-full text-green-500'>
           {category.isDisabled ? 'Coming Soon' : 'Customize'}
         </a>

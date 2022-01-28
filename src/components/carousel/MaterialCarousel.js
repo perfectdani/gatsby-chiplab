@@ -15,17 +15,18 @@ const MaterialCarousel = ({ category }) => {
         breakpoints={{
           400: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 10,
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
           860: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
         }}
+        spaceBetween={50}
       >
         {category.categories &&
           category.categories.map((category) => (

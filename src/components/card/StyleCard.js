@@ -7,9 +7,9 @@ const StyleCard = ({ category }) => {
     <a
       key={category.name}
       href={category.href}
-      className={clsxm('block group', category.isDisabled && 'opacity-50')}
+      className={clsxm('block group shadow-lg bg-white', category.isDisabled && 'opacity-50')}
     >
-      <div aria-hidden='true' className='rounded-lg group-hover:opacity-75'>
+      <div aria-hidden='true' className='rounded-lg border-1 border-b border-solid group-hover:opacity-75'>
         <img
           src={category.imageSrc}
           alt={category.imageAlt}
@@ -22,7 +22,7 @@ const StyleCard = ({ category }) => {
       <ReactMarkdown className='mt-2 mx-auto px-0 text-base text-center text-gray-500'>
         {category.description}
       </ReactMarkdown>
-      <div className='mt-6 text-center'>
+      <div className='py-6 text-center'>
         <a className='border border-green-500 mx-auto px-6 py-2 rounded-full text-green-500'>
           {category.isDisabled ? 'Coming Soon' : 'Customize'}
         </a>

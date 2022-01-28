@@ -3,7 +3,7 @@ import Testimonial from 'src/components/Testimonial';
 
 const CustomerSay = () => {
   return (
-    <section className='bg-white py-10'>
+    <section className='bg-gray-200 py-10'>
       <div className='layout text-center'>
         <h5 className='font-bold text-green-500 text-lg tracking-widest'>
           TESTIMONIAL

@@ -4,7 +4,7 @@ import BannerFooter from 'src/images/block-1.jpeg';
 export default function Cta() {
   return (
     <div
-      className='bg-no-repeat px-6 py-8 md:px-14'
+      className='bg-no-repeat bg-cover px-6 py-8 md:px-14'
       style={{ backgroundImage: `url(${BannerFooter})` }}
     >
       <div className='bg-white/80 max-w-lg mx-auto px-4 py-10 rounded-lg text-center sm:px-6 lg:px-8'>

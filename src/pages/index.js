@@ -24,8 +24,8 @@ const IndexPage = () => {
         <Feature />
         <CategoryPreview category={shopByMaterial} type='material' />
         <CategoryPreview category={shopByStyle} type='style' />
-        <CategoryPreview category={shopByUse} type='use' />
         <OrderingProcess />
+        <CategoryPreview category={shopByUse} type='use' />
         <InstagramFeed />
         <CustomerSay />
         <Cta />
